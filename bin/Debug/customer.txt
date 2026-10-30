@@ -1,0 +1,4 @@
+Haniya,19,The Dark Knight,490,Echo stage,Action
+Dua,24,Se7en,2000,Echo stage,Crime
+Aleeza,18,Stardust,278,Echo stage,Fantasy
+Touqeer,15,Nightcrawler,1600,Echo stage,Thriller

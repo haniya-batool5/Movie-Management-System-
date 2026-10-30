@@ -1,0 +1,7 @@
+C:\Users\Laptop World\source\repos\Project_in_c#\Project_in_c#\bin\Debug\Project_in_c#.exe.config
+C:\Users\Laptop World\source\repos\Project_in_c#\Project_in_c#\bin\Debug\Project_in_c#.exe
+C:\Users\Laptop World\source\repos\Project_in_c#\Project_in_c#\bin\Debug\Project_in_c#.pdb
+C:\Users\Laptop World\source\repos\Project_in_c#\Project_in_c#\obj\Debug\Project.csproj.AssemblyReference.cache
+C:\Users\Laptop World\source\repos\Project_in_c#\Project_in_c#\obj\Debug\Project.csproj.CoreCompileInputs.cache
+C:\Users\Laptop World\source\repos\Project_in_c#\Project_in_c#\obj\Debug\Project_in_c#.exe
+C:\Users\Laptop World\source\repos\Project_in_c#\Project_in_c#\obj\Debug\Project_in_c#.pdb

@@ -1,0 +1,3 @@
+﻿Haniya,19,John Wick,1000,Lost in the spotlight,Action
+Dua,24,MR AND MRS 420,2000,Lost in the spotlight,Comedy
+Customer,20,Extraction,890,Lost in the spotlight,Action
