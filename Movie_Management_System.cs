@@ -56,10 +56,11 @@ namespace Project_in_c_
                 {
                     customerUI.BookTicket();
                 }
-                else if (choice == "4")
+                
+                else if(choice=="4")
                 {
                     Console.WriteLine("Goodbye!Thanks For using Movie Management System");
-                    break;                       
+                    break;
                 }
                 else
                 {

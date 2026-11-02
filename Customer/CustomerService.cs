@@ -123,6 +123,22 @@ namespace Project_in_c_.Customer
             return count;
         }
 
-
+        public List<CustomerModel> Namesearch(string letter)
+        {
+            List<CustomerModel> customer=repo.Load();
+            List<CustomerModel> sel = new List<CustomerModel>();
+            if(customer.Count==0)
+                return sel;
+          
+                for(int i=0; i< customer.Count; i++)
+                {
+                    if (customer[i].name.ToLower().Contains(letter.ToLower()))
+                    {
+                      sel.Add(customer[i]);
+                    }
+                }
+                return sel;
+            
+        }
     }
 }

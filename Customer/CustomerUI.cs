@@ -200,5 +200,24 @@ namespace Project_in_c_.Customer
                 Console.WriteLine($"Senior Citizen: {count[2]}");
             }
         }
+        public void Namesearch()
+        {
+            string letter;
+            Console.Write("Enter the records letter you want to search: ");
+            letter=Console.ReadLine();
+            List<CustomerModel> customers = customerService.Namesearch(letter);
+            if (customers.Count == 0)
+            {
+                Console.WriteLine("NO RECORD FOUND UNDER THESE LETTERS");
+            }
+            else
+            {
+                for(int i = 0;i < customers.Count;i++)
+                {
+                    Console.WriteLine($"{i + 1}\t{customers[i].name}\t\t{customers[i].age}\t\t{customers[i].moviename}\t\tRs.{customers[i].price}\t{customers[i].hall}\t{customers[i].genre}");
+                }
+            }
+
+        }
     }
 }

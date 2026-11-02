@@ -139,5 +139,33 @@ namespace Project_in_c_.Movies
             }
             return false;
         }
+        public List<MovieModel> range(float start,float end)
+        {
+            List<MovieModel> movies= repo.Load();
+            List<MovieModel> sel=new List<MovieModel>();
+            if(movies.Count==0)
+                return sel;
+            for(int i=0;i<movies.Count;i++)
+            {
+                if(movies[i].price>=start && movies[i].price <= end)
+                {
+                    sel.Add(movies[i]);
+                }
+            }
+            return sel;
+        }
+        public MovieModel ExactMatch(string word)
+        {
+            List<MovieModel> movies = repo.Load();
+            MovieModel m=new MovieModel();
+            for(int i=0; i<movies.Count;i++)
+            {
+                if (movies[i].name.Equals(word))
+                {
+                    m= movies[i];
+                }
+            }
+            return m;
+        }
     }
 }

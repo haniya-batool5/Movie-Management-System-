@@ -52,6 +52,7 @@ namespace Project_in_c_.Movies
             Console.Clear();
             List<string> genres = service.ShowGenreList();
 
+            genres.Sort();
             if (genres.Count == 0)
             {
                 Console.WriteLine("NO Movies Found");
@@ -60,6 +61,7 @@ namespace Project_in_c_.Movies
             {
                 for (int i = 0; i < genres.Count; i++)
                 {
+
                     List<MovieModel> movies = service.ShowMoviesByGenre(genres[i]);
                     Console.WriteLine("--------" + genres[i] + "-------");
                     int count = 1;
@@ -151,6 +153,35 @@ namespace Project_in_c_.Movies
             {
                 Console.WriteLine("No record of movie found you entered");
             }
+        }
+        public void range()
+        {
+            Console.Clear();
+            float start, end;
+            Console.Write("Enter your starting value ");
+            start=float.Parse(Console.ReadLine());
+            Console.Write("Enter your ending value ");
+            end = float.Parse(Console.ReadLine());
+            List<MovieModel> movies = service.range(start, end);
+            if (movies.Count == 0)
+            {
+                Console.WriteLine("No record found under your given range");
+            }
+            else
+            {
+                for(int j= 0; j< movies.Count; j++)
+                {
+                    Console.WriteLine($"{j + 1} \t {movies[j].name} \t Rs: {movies[j].price} \t {movies[j].genre}");
+                }
+            }
+        }
+        public void ExactMatch()
+        {
+            string word;
+            Console.Write("Enter the word: ");
+            word = Console.ReadLine();
+            MovieModel m = service.ExactMatch(word);
+            Console.WriteLine($" {m.name} \t Rs: {m.price} \t {m.genre}");
         }
     }
 }

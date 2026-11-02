@@ -89,3 +89,4 @@ The Sixth Sense,Thriller,1800
 Oldboy,Thriller,2500
 Nightcrawler,Thriller,1600
 MR AND MRS 420,Comedy,2000
+Aliens,Action,2000

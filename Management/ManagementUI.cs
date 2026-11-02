@@ -23,7 +23,7 @@ namespace Project_in_c_.Management
             Console.WriteLine("1. View customer booking  ");
             Console.WriteLine("2. Search Customer by Name ");
             Console.WriteLine("3. View total Revenue ");
-            Console.WriteLine("4. View Revenue by genre ");
+            Console.WriteLine("4. View Price By range");
             Console.WriteLine("5. View total tickets sold ");
             Console.WriteLine("6. Cancel Booking ");
             Console.WriteLine("7. Apply discount for movie ");
@@ -71,9 +71,9 @@ namespace Project_in_c_.Management
                 switch (option)
                 {
                     case "1": customerUI.ViewALLBooking(); break;
-                    case "2": customerUI.SearchCustomer(); break;
+                    case "2": customerUI.Namesearch(); break;
                     case "3": customerUI.TotalRevenue(); break;
-                    case "4": customerUI.RevenueReport(); break;
+                    case "4": movieUI.range(); break;
                     case "5": customerUI.TotalTicketsSold(); break;
                     case "6": customerUI.CancelBooking(); break;
                     case "7": movieUI.ApplyingDiscount(); break;

@@ -27,8 +27,10 @@ namespace Project_in_c_.Admin
             Console.WriteLine("5. Add hall ");
             Console.WriteLine("6. Delete hall ");
             Console.WriteLine("7. View hall ");
+            Console.WriteLine("8. Serach Movie by there name");
+           
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("8. Logout ");
+            Console.WriteLine("9 Logout ");
             Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Enter the choice ");
             string option = Console.ReadLine();
@@ -76,18 +78,19 @@ namespace Project_in_c_.Admin
                     case "5": hallUI.AddHall(); break;
                     case "6": hallUI.DeleteHall(); break;
                     case "7": hallUI.ViewHalls(); break;
-                    case "8": Console.WriteLine("Logged out."); break;
+                    case "8": movieUI.ExactMatch(); break;
+                    case "9": Console.WriteLine("Logged out."); break;
                     default: Console.WriteLine("Invalid choice."); break;
                 }
                 Console.WriteLine("\nPress any key to continue...");
                 Console.ReadKey();
 
-                if (option == "8")
+                if (option == "9")
                 {
                     break;
                 }
 
-                if (option != "8")
+                if (option != "9")
                 {
                     Console.WriteLine("\nPress any key to continue...");
                     Console.ReadKey();
